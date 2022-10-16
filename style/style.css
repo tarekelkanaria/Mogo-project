@@ -25,16 +25,16 @@ a {
   text-decoration: none;
 }
 
-.main-title .container > h3, .services .devices .container > h3, .services .container > h3, .our-story .container > h3, .head-land .content .container > h3 {
+.main-title .container > h3, .services .devices .container > h3, .services .container > h3, .head-land .content .container > h3, .services .other-service .container > h3, .our-story .container > h3, .services .our-team .container > h3 {
   font-family: "Kaushan Script", cursive;
 }
-.main-title .container > h2, .services .devices .container > h2, .services .container > h2, .our-story .container > h2, .head-land .content .container > h2 {
+.main-title .container > h2, .services .devices .container > h2, .services .container > h2, .head-land .content .container > h2, .services .other-service .container > h2, .our-story .container > h2, .services .our-team .container > h2 {
   position: relative;
   font-family: "Roboto", sans-serif;
   letter-spacing: -0.15rem;
   text-transform: uppercase;
 }
-.main-title .container > h2:after, .services .devices .container > h2:after, .services .container > h2:after, .our-story .container > h2:after, .head-land .content .container > h2:after {
+.main-title .container > h2:after, .services .devices .container > h2:after, .services .container > h2:after, .head-land .content .container > h2:after, .services .other-service .container > h2:after, .our-story .container > h2:after, .services .our-team .container > h2:after {
   content: "";
   width: 5rem;
   height: 0.3rem;
@@ -45,12 +45,19 @@ a {
   background-color: #f38181;
 }
 
-.our-story .overlay, .head-land .content::before {
+.our-story .overlay, .services .our-team .overlay, .head-land .content::before {
   background-image: linear-gradient(to bottom, rgb(228, 134, 125), rgba(228, 134, 125, 0.5), rgba(236, 204, 131, 0.5), rgb(236, 204, 131));
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
+}
+
+.services .other-service .container p, .our-story .container p, .services .our-team .container p {
+  color: #c5c5c5;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
 }
 
 .head-land {
@@ -62,11 +69,11 @@ a {
 .head-land #navbar {
   background-image: linear-gradient(to bottom, rgb(228, 134, 125), rgb(236, 204, 131));
 }
-.head-land .nav-pills li > a {
+.head-land .navbar-nav li > a {
   color: #fff;
   text-transform: uppercase;
 }
-.head-land .nav-pills li > a.active {
+.head-land .navbar-nav li > a.active {
   border-bottom: 2px solid #fce38a;
   border-radius: 0;
   color: #fce38a;
@@ -83,45 +90,41 @@ a {
   background-color: #fff;
 }
 
-.our-story .container > p {
-  color: #c5c5c5;
-  margin: 0 auto;
-  font-family: "Montserrat", sans-serif;
-}
-.our-story .product {
+.our-story .product, .services .our-team .product {
   position: relative;
   overflow: hidden;
 }
-.our-story .overlay {
+.our-story .overlay, .services .our-team .overlay {
   top: 100%;
   transition: all 0.3s;
 }
-.our-story .product img {
+.our-story .product img, .services .our-team .product img {
   transition: all 0.3s;
 }
-.our-story .product:hover .overlay {
+.our-story .product:hover .overlay, .services .our-team .product:hover .overlay {
   top: 0;
   transform: translate(-0.6rem, -0.6rem);
 }
-.our-story .product:hover img {
+.our-story .product:hover img, .services .our-team .product:hover img {
   box-shadow: 0.6rem 0.6rem 0 #95e1d3;
   transform: translateY(-0.6rem);
 }
-.our-story .sperator {
+.our-story .sperator, .services .our-team .sperator {
   background-color: #95e1d3;
 }
-.our-story .sperator .item {
+.our-story .sperator .item, .services .our-team .sperator .item {
   color: #fff;
 }
-.our-story .sperator .item span {
+.our-story .sperator .item span, .services .our-team .sperator .item span {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 3rem;
 }
-.our-story .sperator .item p {
+.our-story .sperator .item p, .services .our-team .sperator .item p {
   text-transform: uppercase;
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
+  color: #fff;
 }
 
 .services .text h3 {
@@ -148,7 +151,46 @@ a {
 }
 .services .devices .device {
   position: absolute;
-  top: 80%;
-  left: 65%;
+  top: 78%;
+  left: 68%;
   transform: translate(-50%, -50%);
+}
+.services .other-service .row .image,
+.services .other-service .row .text {
+  max-height: 22rem;
+}
+.services .other-service .row .text {
+  overflow-y: auto;
+}
+.services .testimonials {
+  background-color: #f8f8f8;
+}
+.services .testimonials .txt {
+  line-height: 1.6;
+}
+.services .testimonials h3 {
+  font-family: "Kaushan Script", cursive;
+  position: relative;
+  left: 5.5rem;
+}
+.services .testimonials h3::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 0.2rem;
+  background-color: #f38181;
+  bottom: 1rem;
+  left: -5.5rem;
+}
+.services .our-team .overlay span {
+  background-color: rgb(236, 204, 131);
+  color: rgb(228, 134, 125);
+  cursor: pointer;
+}
+.services .our-team .overlay span:hover {
+  background-color: rgb(228, 134, 125);
+  color: #fff;
+}
+.services .brands {
+  background-color: #f8f8f8;
 }/*# sourceMappingURL=style.css.map */

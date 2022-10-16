@@ -7,3 +7,12 @@
   height: 100%;
   left: 0;
 }
+%mainTitle {
+  @extend .main-title;
+  .container p {
+    color: $textColor;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+  }
+}

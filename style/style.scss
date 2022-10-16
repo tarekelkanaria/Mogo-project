@@ -15,7 +15,7 @@
       rgba(236, 204, 131, 1)
     );
   }
-  .nav-pills {
+  .navbar-nav {
     li > a {
       color: $white;
       text-transform: uppercase;
@@ -44,12 +44,7 @@
 }
 // our story style
 .our-story {
-  @extend .main-title;
-  .container > p {
-    color: $textColor;
-    margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
-  }
+  @extend %mainTitle;
   .product {
     position: relative;
     overflow: hidden;
@@ -85,6 +80,7 @@
         text-transform: uppercase;
         font-size: 1.2rem;
         font-family: "Montserrat", sans-serif;
+        color: $white;
       }
     }
   }
@@ -120,9 +116,54 @@
     background-size: cover;
     .device {
       position: absolute;
-      top: 80%;
-      left: 65%;
+      top: 78%;
+      left: 68%;
       transform: translate(-50%, -50%);
     }
+  }
+  .other-service {
+    @extend %mainTitle;
+    .row .image,
+    .row .text {
+      max-height: 22rem;
+    }
+    .row .text {
+      overflow-y: auto;
+    }
+  }
+  .testimonials {
+    background-color: $splite;
+    .txt {
+      line-height: 1.6;
+    }
+    h3 {
+      font-family: "Kaushan Script", cursive;
+      position: relative;
+      left: 5.5rem;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 5rem;
+        height: 0.2rem;
+        background-color: $lineColor;
+        bottom: 1rem;
+        left: -5.5rem;
+      }
+    }
+  }
+  .our-team {
+    @extend .our-story;
+    .overlay span {
+      background-color: rgba(236, 204, 131, 1);
+      color: rgba(228, 134, 125, 1);
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(228, 134, 125, 1);
+        color: $white;
+      }
+    }
+  }
+  .brands {
+    background-color: $splite;
   }
 }
