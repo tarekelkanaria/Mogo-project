@@ -64,7 +64,7 @@
     }
     img {
       box-shadow: 0.6rem 0.6rem 0 #95e1d3;
-      transform: translateY(-0.6rem);
+      transform: translatey(-0.6rem);
     }
   }
   .sperator {
@@ -153,6 +153,11 @@
   }
   .our-team {
     @extend .our-story;
+    .product:hover {
+      img {
+        transform: translate(-0.6rem, -0.6rem);
+      }
+    }
     .overlay span {
       background-color: rgba(236, 204, 131, 1);
       color: rgba(228, 134, 125, 1);

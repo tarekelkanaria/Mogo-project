@@ -107,7 +107,7 @@ a {
 }
 .our-story .product:hover img, .work .product:hover img, .services .our-team .product:hover img {
   box-shadow: 0.6rem 0.6rem 0 #95e1d3;
-  transform: translateY(-0.6rem);
+  transform: translatey(-0.6rem);
 }
 .our-story .sperator, .work .sperator, .services .our-team .sperator {
   background-color: #95e1d3;
@@ -181,6 +181,9 @@ a {
   background-color: #f38181;
   bottom: 1rem;
   left: -5.5rem;
+}
+.services .our-team .product:hover img {
+  transform: translate(-0.6rem, -0.6rem);
 }
 .services .our-team .overlay span {
   background-color: rgb(236, 204, 131);
