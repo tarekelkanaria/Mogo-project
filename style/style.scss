@@ -57,11 +57,11 @@
   .product img {
     transition: all 0.3s;
   }
-  .product:hover .overlay {
-    top: 0;
-    transform: translate(-0.6rem, -0.6rem);
-  }
   .product:hover {
+    .overlay {
+      top: 0;
+      transform: translate(-0.6rem, -0.6rem);
+    }
     img {
       box-shadow: 0.6rem 0.6rem 0 #95e1d3;
       transform: translateY(-0.6rem);
@@ -165,5 +165,14 @@
   }
   .brands {
     background-color: $splite;
+  }
+}
+// work style
+.work {
+  @extend .our-story;
+  .product:hover {
+    img {
+      transform: translate(-0.6rem, -0.6rem);
+    }
   }
 }

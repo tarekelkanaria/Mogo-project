@@ -25,16 +25,16 @@ a {
   text-decoration: none;
 }
 
-.main-title .container > h3, .services .devices .container > h3, .services .container > h3, .head-land .content .container > h3, .services .other-service .container > h3, .our-story .container > h3, .services .our-team .container > h3 {
+.main-title .container > h3, .services .devices .container > h3, .services .container > h3, .head-land .content .container > h3, .services .other-service .container > h3, .our-story .container > h3, .work .container > h3, .services .our-team .container > h3 {
   font-family: "Kaushan Script", cursive;
 }
-.main-title .container > h2, .services .devices .container > h2, .services .container > h2, .head-land .content .container > h2, .services .other-service .container > h2, .our-story .container > h2, .services .our-team .container > h2 {
+.main-title .container > h2, .services .devices .container > h2, .services .container > h2, .head-land .content .container > h2, .services .other-service .container > h2, .our-story .container > h2, .work .container > h2, .services .our-team .container > h2 {
   position: relative;
   font-family: "Roboto", sans-serif;
   letter-spacing: -0.15rem;
   text-transform: uppercase;
 }
-.main-title .container > h2:after, .services .devices .container > h2:after, .services .container > h2:after, .head-land .content .container > h2:after, .services .other-service .container > h2:after, .our-story .container > h2:after, .services .our-team .container > h2:after {
+.main-title .container > h2:after, .services .devices .container > h2:after, .services .container > h2:after, .head-land .content .container > h2:after, .services .other-service .container > h2:after, .our-story .container > h2:after, .work .container > h2:after, .services .our-team .container > h2:after {
   content: "";
   width: 5rem;
   height: 0.3rem;
@@ -45,7 +45,7 @@ a {
   background-color: #f38181;
 }
 
-.our-story .overlay, .services .our-team .overlay, .head-land .content::before {
+.our-story .overlay, .work .overlay, .services .our-team .overlay, .head-land .content::before {
   background-image: linear-gradient(to bottom, rgb(228, 134, 125), rgba(228, 134, 125, 0.5), rgba(236, 204, 131, 0.5), rgb(236, 204, 131));
   position: absolute;
   width: 100%;
@@ -53,7 +53,7 @@ a {
   left: 0;
 }
 
-.services .other-service .container p, .our-story .container p, .services .our-team .container p {
+.services .other-service .container p, .our-story .container p, .work .container p, .services .our-team .container p {
   color: #c5c5c5;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
@@ -90,37 +90,37 @@ a {
   background-color: #fff;
 }
 
-.our-story .product, .services .our-team .product {
+.our-story .product, .work .product, .services .our-team .product {
   position: relative;
   overflow: hidden;
 }
-.our-story .overlay, .services .our-team .overlay {
+.our-story .overlay, .work .overlay, .services .our-team .overlay {
   top: 100%;
   transition: all 0.3s;
 }
-.our-story .product img, .services .our-team .product img {
+.our-story .product img, .work .product img, .services .our-team .product img {
   transition: all 0.3s;
 }
-.our-story .product:hover .overlay, .services .our-team .product:hover .overlay {
+.our-story .product:hover .overlay, .work .product:hover .overlay, .services .our-team .product:hover .overlay {
   top: 0;
   transform: translate(-0.6rem, -0.6rem);
 }
-.our-story .product:hover img, .services .our-team .product:hover img {
+.our-story .product:hover img, .work .product:hover img, .services .our-team .product:hover img {
   box-shadow: 0.6rem 0.6rem 0 #95e1d3;
   transform: translateY(-0.6rem);
 }
-.our-story .sperator, .services .our-team .sperator {
+.our-story .sperator, .work .sperator, .services .our-team .sperator {
   background-color: #95e1d3;
 }
-.our-story .sperator .item, .services .our-team .sperator .item {
+.our-story .sperator .item, .work .sperator .item, .services .our-team .sperator .item {
   color: #fff;
 }
-.our-story .sperator .item span, .services .our-team .sperator .item span {
+.our-story .sperator .item span, .work .sperator .item span, .services .our-team .sperator .item span {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 3rem;
 }
-.our-story .sperator .item p, .services .our-team .sperator .item p {
+.our-story .sperator .item p, .work .sperator .item p, .services .our-team .sperator .item p {
   text-transform: uppercase;
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
@@ -193,4 +193,8 @@ a {
 }
 .services .brands {
   background-color: #f8f8f8;
+}
+
+.work .product:hover img {
+  transform: translate(-0.6rem, -0.6rem);
 }/*# sourceMappingURL=style.css.map */
