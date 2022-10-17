@@ -16,3 +16,22 @@
     font-size: 0.8rem;
   }
 }
+%testimonials {
+  .txt {
+    line-height: 1.6;
+  }
+  h3 {
+    font-family: "Kaushan Script", cursive;
+    position: relative;
+    left: 5.5rem;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 5rem;
+      height: 0.2rem;
+      background-color: $lineColor;
+      bottom: 1rem;
+      left: -5.5rem;
+    }
+  }
+}

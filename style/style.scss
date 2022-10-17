@@ -133,23 +133,7 @@
   }
   .testimonials {
     background-color: $splite;
-    .txt {
-      line-height: 1.6;
-    }
-    h3 {
-      font-family: "Kaushan Script", cursive;
-      position: relative;
-      left: 5.5rem;
-      &::before {
-        content: "";
-        position: absolute;
-        width: 5rem;
-        height: 0.2rem;
-        background-color: $lineColor;
-        bottom: 1rem;
-        left: -5.5rem;
-      }
-    }
+    @extend %testimonials;
   }
   .our-team {
     @extend .our-story;
@@ -180,4 +164,31 @@
       transform: translate(-0.6rem, -0.6rem);
     }
   }
+  .testimonials-two {
+    @extend %testimonials;
+  }
+  .happy-client {
+    @extend .main-title;
+    background-image: url("/images/happy-client/bg-happy-client.jpg");
+    background-size: cover;
+    .info h3 {
+      font-family: "Roboto", sans-serif;
+    }
+    .info p:first-of-type {
+      position: relative;
+      &::after {
+        content: "";
+        width: 5rem;
+        height: 0.2rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $lineColor;
+      }
+    }
+  }
+}
+// blog style
+.blog {
+  @extend .main-title;
 }

@@ -16,9 +16,6 @@
   box-sizing: border-box;
   outline: none;
 }
-// html {
-//   font-size: 62.5%;
-// }
 ul {
   list-style: none;
 }
@@ -26,16 +23,15 @@ a {
   text-decoration: none;
 }
 .main-title {
-  .container > h3 {
+  h3:first-of-type {
     font-family: "Kaushan Script", cursive;
   }
-  .container > h2 {
+  h2:first-of-type {
     position: relative;
     font-family: "Roboto", sans-serif;
-    letter-spacing: -0.15rem;
     text-transform: uppercase;
   }
-  .container > h2:after {
+  h2:first-of-type::after {
     content: "";
     width: 5rem;
     height: 0.3rem;

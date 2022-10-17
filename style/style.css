@@ -25,16 +25,15 @@ a {
   text-decoration: none;
 }
 
-.main-title .container > h3, .services .devices .container > h3, .services .container > h3, .head-land .content .container > h3, .services .other-service .container > h3, .our-story .container > h3, .work .container > h3, .services .our-team .container > h3 {
+.main-title h3:first-of-type, .blog h3:first-of-type, .services h3:first-of-type, .head-land .content h3:first-of-type, .our-story h3:first-of-type, .work h3:first-of-type {
   font-family: "Kaushan Script", cursive;
 }
-.main-title .container > h2, .services .devices .container > h2, .services .container > h2, .head-land .content .container > h2, .services .other-service .container > h2, .our-story .container > h2, .work .container > h2, .services .our-team .container > h2 {
+.main-title h2:first-of-type, .blog h2:first-of-type, .services h2:first-of-type, .head-land .content h2:first-of-type, .our-story h2:first-of-type, .work h2:first-of-type {
   position: relative;
   font-family: "Roboto", sans-serif;
-  letter-spacing: -0.15rem;
   text-transform: uppercase;
 }
-.main-title .container > h2:after, .services .devices .container > h2:after, .services .container > h2:after, .head-land .content .container > h2:after, .services .other-service .container > h2:after, .our-story .container > h2:after, .work .container > h2:after, .services .our-team .container > h2:after {
+.main-title h2:first-of-type::after, .blog h2:first-of-type::after, .services h2:first-of-type::after, .head-land .content h2:first-of-type::after, .our-story h2:first-of-type::after, .work h2:first-of-type::after {
   content: "";
   width: 5rem;
   height: 0.3rem;
@@ -58,6 +57,24 @@ a {
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
+}
+
+.work .testimonials-two .txt, .services .testimonials .txt {
+  line-height: 1.6;
+}
+.work .testimonials-two h3, .services .testimonials h3 {
+  font-family: "Kaushan Script", cursive;
+  position: relative;
+  left: 5.5rem;
+}
+.work .testimonials-two h3::before, .services .testimonials h3::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 0.2rem;
+  background-color: #f38181;
+  bottom: 1rem;
+  left: -5.5rem;
 }
 
 .head-land {
@@ -165,23 +182,6 @@ a {
 .services .testimonials {
   background-color: #f8f8f8;
 }
-.services .testimonials .txt {
-  line-height: 1.6;
-}
-.services .testimonials h3 {
-  font-family: "Kaushan Script", cursive;
-  position: relative;
-  left: 5.5rem;
-}
-.services .testimonials h3::before {
-  content: "";
-  position: absolute;
-  width: 5rem;
-  height: 0.2rem;
-  background-color: #f38181;
-  bottom: 1rem;
-  left: -5.5rem;
-}
 .services .our-team .product:hover img {
   transform: translate(-0.6rem, -0.6rem);
 }
@@ -200,4 +200,23 @@ a {
 
 .work .product:hover img {
   transform: translate(-0.6rem, -0.6rem);
+}
+.work .happy-client {
+  background-image: url("/images/happy-client/bg-happy-client.jpg");
+  background-size: cover;
+}
+.work .happy-client .info h3 {
+  font-family: "Roboto", sans-serif;
+}
+.work .happy-client .info p:first-of-type {
+  position: relative;
+}
+.work .happy-client .info p:first-of-type::after {
+  content: "";
+  width: 5rem;
+  height: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #f38181;
 }/*# sourceMappingURL=style.css.map */
