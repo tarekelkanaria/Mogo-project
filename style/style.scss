@@ -191,4 +191,55 @@
 // blog style
 .blog {
   @extend .main-title;
+  .poster__blog div {
+    background-color: $mainColor;
+    width: 4rem;
+    height: 4.8rem;
+    position: absolute;
+    top: 55%;
+    left: -1rem;
+    span {
+      height: 35%;
+    }
+  }
+  .static__blog span svg {
+    color: $mainColor;
+  }
+  .map {
+    background-image: url("../images/map/bg-map.jpg");
+    background-size: cover;
+    .map-icon {
+      color: $lineColor;
+      p {
+        position: relative;
+        &::after {
+          content: "";
+          width: 5rem;
+          height: 0.2rem;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          background-color: $lineColor;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+// contact style
+.contact {
+  background-color: $splite;
+  span i {
+    color: $mainColor;
+  }
+  input {
+    outline: none;
+  }
+  button {
+    background-color: $mainColor;
+    color: $white;
+  }
+  p span {
+    color: $lineColor;
+  }
 }

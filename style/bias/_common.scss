@@ -23,22 +23,25 @@ a {
   text-decoration: none;
 }
 .main-title {
-  h3:first-of-type {
-    font-family: "Kaushan Script", cursive;
-  }
-  h2:first-of-type {
-    position: relative;
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-  }
-  h2:first-of-type::after {
-    content: "";
-    width: 5rem;
-    height: 0.3rem;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    background-color: $lineColor;
+  .container,
+  .container-fluid {
+    > h3 {
+      font-family: "Kaushan Script", cursive;
+    }
+    > h2 {
+      position: relative;
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+    }
+    > h2::after {
+      content: "";
+      width: 5rem;
+      height: 0.3rem;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      background-color: $lineColor;
+    }
   }
 }

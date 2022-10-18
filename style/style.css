@@ -25,15 +25,45 @@ a {
   text-decoration: none;
 }
 
-.main-title h3:first-of-type, .blog h3:first-of-type, .services h3:first-of-type, .head-land .content h3:first-of-type, .our-story h3:first-of-type, .work h3:first-of-type {
+.main-title .container > h3, .blog .container > h3, .work .happy-client .container > h3, .services .devices .container > h3, .services .container > h3, .head-land .content .container > h3, .services .other-service .container > h3, .our-story .container > h3, .work .container > h3, .services .our-team .container > h3,
+.main-title .container-fluid > h3,
+.blog .container-fluid > h3,
+.work .happy-client .container-fluid > h3,
+.services .devices .container-fluid > h3,
+.services .container-fluid > h3,
+.head-land .content .container-fluid > h3,
+.services .other-service .container-fluid > h3,
+.our-story .container-fluid > h3,
+.work .container-fluid > h3,
+.services .our-team .container-fluid > h3 {
   font-family: "Kaushan Script", cursive;
 }
-.main-title h2:first-of-type, .blog h2:first-of-type, .services h2:first-of-type, .head-land .content h2:first-of-type, .our-story h2:first-of-type, .work h2:first-of-type {
+.main-title .container > h2, .blog .container > h2, .work .happy-client .container > h2, .services .devices .container > h2, .services .container > h2, .head-land .content .container > h2, .services .other-service .container > h2, .our-story .container > h2, .work .container > h2, .services .our-team .container > h2,
+.main-title .container-fluid > h2,
+.blog .container-fluid > h2,
+.work .happy-client .container-fluid > h2,
+.services .devices .container-fluid > h2,
+.services .container-fluid > h2,
+.head-land .content .container-fluid > h2,
+.services .other-service .container-fluid > h2,
+.our-story .container-fluid > h2,
+.work .container-fluid > h2,
+.services .our-team .container-fluid > h2 {
   position: relative;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
-.main-title h2:first-of-type::after, .blog h2:first-of-type::after, .services h2:first-of-type::after, .head-land .content h2:first-of-type::after, .our-story h2:first-of-type::after, .work h2:first-of-type::after {
+.main-title .container > h2::after, .blog .container > h2::after, .work .happy-client .container > h2::after, .services .devices .container > h2::after, .services .container > h2::after, .head-land .content .container > h2::after, .services .other-service .container > h2::after, .our-story .container > h2::after, .work .container > h2::after, .services .our-team .container > h2::after,
+.main-title .container-fluid > h2::after,
+.blog .container-fluid > h2::after,
+.work .happy-client .container-fluid > h2::after,
+.services .devices .container-fluid > h2::after,
+.services .container-fluid > h2::after,
+.head-land .content .container-fluid > h2::after,
+.services .other-service .container-fluid > h2::after,
+.our-story .container-fluid > h2::after,
+.work .container-fluid > h2::after,
+.services .our-team .container-fluid > h2::after {
   content: "";
   width: 5rem;
   height: 0.3rem;
@@ -219,4 +249,56 @@ a {
   bottom: 0;
   left: 0;
   background-color: #f38181;
+}
+
+.blog .poster__blog div {
+  background-color: #95e1d3;
+  width: 4rem;
+  height: 4.8rem;
+  position: absolute;
+  top: 55%;
+  left: -1rem;
+}
+.blog .poster__blog div span {
+  height: 35%;
+}
+.blog .static__blog span svg {
+  color: #95e1d3;
+}
+.blog .map {
+  background-image: url("../images/map/bg-map.jpg");
+  background-size: cover;
+}
+.blog .map .map-icon {
+  color: #f38181;
+}
+.blog .map .map-icon p {
+  position: relative;
+}
+.blog .map .map-icon p::after {
+  content: "";
+  width: 5rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  background-color: #f38181;
+  transform: translateX(-50%);
+}
+
+.contact {
+  background-color: #f8f8f8;
+}
+.contact span i {
+  color: #95e1d3;
+}
+.contact input {
+  outline: none;
+}
+.contact button {
+  background-color: #95e1d3;
+  color: #fff;
+}
+.contact p span {
+  color: #f38181;
 }/*# sourceMappingURL=style.css.map */
