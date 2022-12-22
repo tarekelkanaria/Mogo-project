@@ -232,7 +232,7 @@ a {
   transform: translate(-0.6rem, -0.6rem);
 }
 .work .happy-client {
-  background-image: url("/images/happy-client/bg-happy-client.jpg");
+  background-image: url("../images/happy-client/bg-happy-client.jpg");
   background-size: cover;
 }
 .work .happy-client .info h3 {

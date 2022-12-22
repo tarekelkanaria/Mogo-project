@@ -169,7 +169,7 @@
   }
   .happy-client {
     @extend .main-title;
-    background-image: url("/images/happy-client/bg-happy-client.jpg");
+    background-image: url("../images/happy-client/bg-happy-client.jpg");
     background-size: cover;
     .info h3 {
       font-family: "Roboto", sans-serif;
