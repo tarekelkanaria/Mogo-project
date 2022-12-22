@@ -2,6 +2,8 @@
 
 ## Demo-Preview
 
+[Mogo Project link](https://tarekelkanaria.github.io/Mogo-project/)
+
 ## Author
 
 **Tarek Elkanaria**
